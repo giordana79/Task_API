@@ -96,3 +96,48 @@
 {"level":"info","message":"Server in ascolto su http://localhost:3000","timestamp":"2025-10-21 21:44:02"}
 {"level":"info","message":"::1 - - [21/Oct/2025:19:44:12 +0000] \"GET /health HTTP/1.1\" 200 15 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Safari/605.1.15\"","timestamp":"2025-10-21 21:44:12"}
 {"level":"info","message":"::1 - - [21/Oct/2025:19:44:13 +0000] \"GET /health HTTP/1.1\" 200 15 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Safari/605.1.15\"","timestamp":"2025-10-21 21:44:13"}
+{"level":"info","message":"Connesso a MongoDB","timestamp":"2025-10-21 22:08:56"}
+{"level":"info","message":"Server in ascolto su http://localhost:3000","timestamp":"2025-10-21 22:08:56"}
+{"level":"info","message":"::1 - - [21/Oct/2025:20:09:27 +0000] \"GET /api/tasks HTTP/1.1\" 200 1374 \"-\" \"PostmanRuntime/7.49.0\"","timestamp":"2025-10-21 22:09:27"}
+{"id":"68f7e8a65725c58d4be055c5","level":"info","message":"Task creato","timestamp":"2025-10-21 22:10:14"}
+{"level":"info","message":"::1 - - [21/Oct/2025:20:10:14 +0000] \"POST /api/tasks HTTP/1.1\" 201 262 \"-\" \"PostmanRuntime/7.49.0\"","timestamp":"2025-10-21 22:10:14"}
+{"level":"info","message":"Connesso a MongoDB","timestamp":"2025-10-21 22:11:54"}
+{"level":"info","message":"Server in ascolto su http://localhost:3000","timestamp":"2025-10-21 22:11:54"}
+{"id":"68f7e9197ccfb0e3c009b505","level":"info","message":"Task creato","timestamp":"2025-10-21 22:12:09"}
+{"level":"info","message":"::1 - - [21/Oct/2025:20:12:09 +0000] \"POST /api/tasks HTTP/1.1\" 201 263 \"-\" \"PostmanRuntime/7.49.0\"","timestamp":"2025-10-21 22:12:09"}
+{"level":"info","message":"Connesso a MongoDB","timestamp":"2025-10-21 22:16:32"}
+{"level":"info","message":"Server in ascolto su http://localhost:3000","timestamp":"2025-10-21 22:16:32"}
+{"level":"info","message":"Connesso a MongoDB","timestamp":"2025-10-21 22:17:18"}
+{"level":"info","message":"Server in ascolto su http://localhost:3000","timestamp":"2025-10-21 22:17:18"}
+{"id":"68f7ea6e32760b5cd1695d54","level":"info","message":"Task creato","timestamp":"2025-10-21 22:17:50"}
+{"level":"info","message":"Connesso a MongoDB","timestamp":"2025-10-21 22:18:12"}
+{"level":"info","message":"Server in ascolto su http://localhost:3000","timestamp":"2025-10-21 22:18:13"}
+{"id":"68f7ea8bc3a22a655e705532","level":"info","message":"Task creato","timestamp":"2025-10-21 22:18:20"}
+{"level":"info","message":"::1 - - [21/Oct/2025:20:18:45 +0000] \"POST /api/tasks HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.49.0\"","timestamp":"2025-10-21 22:18:45"}
+{"level":"error","message":"task is not defined","stack":"ReferenceError: task is not defined\n    at /Users/giordanapandolfo/Desktop/Task_API/routes/tasks.js:49:14\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-10-21 22:18:49"}
+{"level":"info","message":"::1 - - [21/Oct/2025:20:18:49 +0000] \"GET /api/tasks HTTP/1.1\" 500 33 \"-\" \"PostmanRuntime/7.49.0\"","timestamp":"2025-10-21 22:18:49"}
+{"level":"info","message":"Connesso a MongoDB","timestamp":"2025-10-21 22:22:54"}
+{"level":"info","message":"Server in ascolto su http://localhost:3000","timestamp":"2025-10-21 22:22:54"}
+{"level":"error","message":"task is not defined","stack":"ReferenceError: task is not defined\n    at /Users/giordanapandolfo/Desktop/Task_API/routes/tasks.js:49:26\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-10-21 22:23:02"}
+{"level":"info","message":"::1 - - [21/Oct/2025:20:23:02 +0000] \"GET /api/tasks HTTP/1.1\" 500 33 \"-\" \"PostmanRuntime/7.49.0\"","timestamp":"2025-10-21 22:23:02"}
+{"id":"68f7ebb560ebf945464babee","level":"info","message":"Task creato","timestamp":"2025-10-21 22:23:17"}
+{"level":"info","message":"::1 - - [21/Oct/2025:20:23:17 +0000] \"POST /api/tasks HTTP/1.1\" 201 166 \"-\" \"PostmanRuntime/7.49.0\"","timestamp":"2025-10-21 22:23:17"}
+{"level":"error","message":"task is not defined","stack":"ReferenceError: task is not defined\n    at /Users/giordanapandolfo/Desktop/Task_API/routes/tasks.js:49:26\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-10-21 22:24:45"}
+{"level":"info","message":"::1 - - [21/Oct/2025:20:24:45 +0000] \"GET /api/tasks HTTP/1.1\" 500 33 \"-\" \"PostmanRuntime/7.49.0\"","timestamp":"2025-10-21 22:24:45"}
+{"level":"error","message":"task is not defined","stack":"ReferenceError: task is not defined\n    at /Users/giordanapandolfo/Desktop/Task_API/routes/tasks.js:49:26\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-10-21 22:25:03"}
+{"level":"info","message":"::1 - - [21/Oct/2025:20:25:03 +0000] \"GET /api/tasks HTTP/1.1\" 500 33 \"-\" \"PostmanRuntime/7.49.0\"","timestamp":"2025-10-21 22:25:03"}
+{"level":"error","message":"task is not defined","stack":"ReferenceError: task is not defined\n    at /Users/giordanapandolfo/Desktop/Task_API/routes/tasks.js:75:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-10-21 22:25:31"}
+{"level":"info","message":"::1 - - [21/Oct/2025:20:25:31 +0000] \"PATCH /api/tasks/68f7ea8bc3a22a655e705532 HTTP/1.1\" 500 33 \"-\" \"PostmanRuntime/7.49.0\"","timestamp":"2025-10-21 22:25:31"}
+{"level":"info","message":"Connesso a MongoDB","timestamp":"2025-10-21 22:31:59"}
+{"level":"info","message":"Server in ascolto su http://localhost:3000","timestamp":"2025-10-21 22:31:59"}
+{"level":"info","message":"::1 - - [21/Oct/2025:20:32:17 +0000] \"PATCH /api/tasks/68f7ea8bc3a22a655e705532 HTTP/1.1\" 200 166 \"-\" \"PostmanRuntime/7.49.0\"","timestamp":"2025-10-21 22:32:17"}
+{"level":"info","message":"::1 - - [21/Oct/2025:20:32:26 +0000] \"PATCH /api/tasks/68f7ea8bc3a22a655e705532 HTTP/1.1\" 200 166 \"-\" \"PostmanRuntime/7.49.0\"","timestamp":"2025-10-21 22:32:26"}
+{"id":"68f7edfc42581a00877a54b9","level":"info","message":"Task creato","timestamp":"2025-10-21 22:33:00","title":"modifica orario4"}
+{"level":"info","message":"::1 - - [21/Oct/2025:20:33:00 +0000] \"POST /api/tasks HTTP/1.1\" 201 166 \"-\" \"PostmanRuntime/7.49.0\"","timestamp":"2025-10-21 22:33:00"}
+{"level":"info","message":"::1 - - [21/Oct/2025:20:33:08 +0000] \"GET /api/tasks HTTP/1.1\" 200 502 \"-\" \"PostmanRuntime/7.49.0\"","timestamp":"2025-10-21 22:33:08"}
+{"id":"68f7e9197ccfb0e3c009b505","level":"warn","message":"Task eliminato","timestamp":"2025-10-21 22:33:37","title":"modifica orario1"}
+{"level":"info","message":"::1 - - [21/Oct/2025:20:33:37 +0000] \"DELETE /api/tasks/68f7e9197ccfb0e3c009b505 HTTP/1.1\" 200 60 \"-\" \"PostmanRuntime/7.49.0\"","timestamp":"2025-10-21 22:33:37"}
+{"level":"info","message":"::1 - - [21/Oct/2025:20:34:07 +0000] \"GET /api/tasks HTTP/1.1\" 200 335 \"-\" \"PostmanRuntime/7.49.0\"","timestamp":"2025-10-21 22:34:07"}
+{"level":"info","message":"::1 - - [21/Oct/2025:20:34:40 +0000] \"PATCH /api/tasks/68f7ea8bc3a22a655e705532 HTTP/1.1\" 200 166 \"-\" \"PostmanRuntime/7.49.0\"","timestamp":"2025-10-21 22:34:40"}
+{"level":"info","message":"::1 - - [21/Oct/2025:20:34:43 +0000] \"PATCH /api/tasks/68f7ea8bc3a22a655e705532 HTTP/1.1\" 200 166 \"-\" \"PostmanRuntime/7.49.0\"","timestamp":"2025-10-21 22:34:43"}
+{"level":"info","message":"::1 - - [21/Oct/2025:20:34:51 +0000] \"GET /api/tasks HTTP/1.1\" 200 335 \"-\" \"PostmanRuntime/7.49.0\"","timestamp":"2025-10-21 22:34:51"}

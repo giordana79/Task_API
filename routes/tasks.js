@@ -26,26 +26,13 @@ const updateSchema = Joi.object({
     .optional(),
 }).min(1);
 
-// Funzione helper per aggiungere timestamp locali
-function withLocalDates(task) {
-  const obj = task.toObject ? task.toObject() : task;
-  return {
-    ...obj,
-    createdAtLocal: new Date(obj.createdAt).toLocaleString("it-IT", {
-      timeZone: "Europe/Rome",
-    }),
-    updatedAtLocal: new Date(obj.updatedAt).toLocaleString("it-IT", {
-      timeZone: "Europe/Rome",
-    }),
-  };
-}
-
 // POST /api/tasks
 router.post("/", validateBody(createSchema), async (req, res, next) => {
   try {
     const task = await taskService.createTask(req.body);
-    logger.info("Task creato", { id: task._id });
-    res.status(201).json(withLocalDates(task));
+    //logger.info("Task creato", { id: task._id });
+    logger.info("Task creato", { id: task._id, title: task.title });
+    res.status(201).json(task);
   } catch (err) {
     next(err);
   }
@@ -59,7 +46,8 @@ router.get("/", async (req, res, next) => {
     if (req.query.completed !== undefined)
       filter.completed = req.query.completed === "true";
     const tasks = await taskService.getAllTasks(filter);
-    res.json(tasks.map(withLocalDates));
+    //res.json(tasks.map(withLocalDates));
+    res.status(200).json(tasks);
   } catch (err) {
     next(err);
   }
@@ -69,7 +57,7 @@ router.get("/", async (req, res, next) => {
 router.get("/completed", async (req, res, next) => {
   try {
     const tasks = await taskService.getAllTasks({ completed: true });
-    res.json(tasks.map(withLocalDates));
+    res.status(200).json(tasks);
   } catch (err) {
     next(err);
   }
@@ -85,7 +73,7 @@ router.patch(
       const updated = await taskService.updateTask(req.params.id, req.body);
       if (!updated)
         return res.status(404).json({ message: "Task non trovato" });
-      res.json(withLocalDates(updated));
+      res.status(200).json(updated);
     } catch (err) {
       next(err);
     }
@@ -99,7 +87,7 @@ router.delete("/:id", validateId, async (req, res, next) => {
     if (!deleted) return res.status(404).json({ message: "Task non trovato" });
 
     logger.warn("Task eliminato", { id: deleted._id, title: deleted.title });
-    res.json(withLocalDates(deleted));
+    res.status(200).json({ message: "Task eliminato", id: deleted._id });
   } catch (err) {
     next(err);
   }
