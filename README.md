@@ -176,3 +176,7 @@ DELETE /api/tasks/:id
 3. Logica CRUD → taskService interagisce con MongoDB.
 4. Risposta al client → con timestamp locali.
 5. Errori → catturati da errorHandler e loggati con Winston
+
+[railway.com](https://taskapi-production-f773.up.railway.app)
+
+[render.com](https://task-api-n7ss.onrender.com/)
