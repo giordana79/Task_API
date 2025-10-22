@@ -30,7 +30,6 @@ const updateSchema = Joi.object({
 router.post("/", validateBody(createSchema), async (req, res, next) => {
   try {
     const task = await taskService.createTask(req.body);
-    //logger.info("Task creato", { id: task._id });
     logger.info("Task creato", { id: task._id, title: task.title });
     res.status(201).json(task);
   } catch (err) {
@@ -46,7 +45,6 @@ router.get("/", async (req, res, next) => {
     if (req.query.completed !== undefined)
       filter.completed = req.query.completed === "true";
     const tasks = await taskService.getAllTasks(filter);
-    //res.json(tasks.map(withLocalDates));
     res.status(200).json(tasks);
   } catch (err) {
     next(err);
